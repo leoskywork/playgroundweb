@@ -1,0 +1,52 @@
+/* tag override */
+body {
+    margin: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* common */
+.link-highlight{
+    color:dodgerblue;
+}
+
+.color-light{
+    color: #888;
+}
+
+.color-white{
+    color: white;
+}
+
+/* skeleton */
+.top-banner {
+    color: white;
+    background: darkslategrey;
+    font-size: 1.4rem;
+    display: flex;
+    padding: 10px 0;
+}
+
+.top-banner-item {
+    margin: auto; /* let its content centered, works with parent flex */
+}
+
+.main-body{
+    height: 96vh;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.footer-item {
+    flex-basis: 35%;
+    padding: 10px;
+    box-sizing: border-box; /* include padding in width/height */
+}
