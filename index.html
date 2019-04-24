@@ -7,6 +7,8 @@
     <link rel="icon" href="img/leo-lsk5.ico"/>
     <link rel="stylesheet" href="style/shared.css">
     <link rel="stylesheet" href="style/play.css" />
+    <!-- not working?? -->
+    <!-- <script type="module" src="script/tool.js"></script> -->
 	<script src="script/play.js"></script>
 	<noscript>You have disabled javascript, this site may not work properly, please enable it!</noscript>
 </head>
@@ -18,9 +20,18 @@
 	</div>
 	<div class="main-body">
         <div class="card-container">
-            <div class="hor-card"></div>
-            <div class="hor-card"></div>
-            <div class="hor-card"></div>
+            <div class="fixed-card">
+                <strong id="card-live-days">...</strong><span>days alive</span>
+            </div>
+            <div class="fixed-card">
+                <strong id="card-remaining-days">...</strong><span>days left</span>
+            </div>
+            <div class="fixed-card">
+                <!-- features (partially) implemented -->
+                <!-- home page -->
+                <!-- playground -->
+                <strong>2</strong><span>features</span><span id="card-live-percent"></span>
+            </div>
         </div>
 	</div>
 	<hr>
@@ -34,5 +45,14 @@
 		</a>
 	  </div>
 	</div>
+    <script>
+    /* references 
+
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static
+    https://codepen.io/anon/pen/VKxRoE?editors=1100
+
+    */
+    </script>
 </body>
 </html>

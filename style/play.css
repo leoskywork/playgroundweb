@@ -23,15 +23,42 @@
 
 /* card views */
 .card-container {
+    margin: 40px auto;
     display: flex;
+    align-items: center; /* ??seems this can be removed */
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.hor-card {
+.fixed-card {
     /* for test */
     background-color: #888;
-    border: 1px solid #444;
+    border: 1px solid #fff;
     
-    min-height: 180px;
-    min-width: 320px;
+    height: 180px;
+    width: 320px; /* todo: adjust the sizes for desktop and mobile */
 
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+
+    text-align: center;
+    line-height: 138px; /* depend: this is to make text vertically centered, need adjust if parent's height changed */
+}
+
+@media(min-width: 960px) {
+    .fixed-card {
+        margin-bottom: 0;
+    } 
+}
+
+.fixed-card strong{
+    color: white;
+    font-size: 70px;
+    font-weight: normal;
+    padding-right: 20px;
+}
+
+.fixed-card span{
+    color: white;
 }
