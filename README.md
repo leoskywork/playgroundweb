@@ -1,12 +1,13 @@
 # web playground
 
-* A playground for ~~COOL~~ _hard_ web UI implements
+* A playground for ~~COOL~~ _bare bone_ web UI implements
 
 ---
 
 ## to do
 
 * [ ] add one more card(four in total), split # feature released and % time spent
+* [x] correct the typo in repository name 'paly' to 'play'
 
 ---
 
