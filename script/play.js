@@ -16,10 +16,10 @@ function main () {
     function initCards () {
         let liveDays = getLiveTimeLocally();
         let remainingDays = getRemainingTimeLocally();
-        let livePercent = remainingDays > 0 ? Math.round(liveDays/(liveDays+remainingDays)*100)/100 : 1;
+        let livePercent = remainingDays > 0 ? Math.ceil(liveDays/(liveDays+remainingDays)*100)/100 : 1;
         document.getElementById('card-live-days').innerText = liveDays.toString();
         document.getElementById('card-remaining-days').innerText = remainingDays.toString();
-        document.getElementById('card-live-percent').innerText = `, ${(livePercent*100)}% spent`;
+        document.getElementById('card-live-percent').innerText = `${(livePercent*100)}%`;
 
         setTimeout(() => {
             initCards();

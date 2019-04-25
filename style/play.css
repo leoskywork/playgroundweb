@@ -55,9 +55,10 @@
 
 @media(max-width: 960px) {
     /* fixme: need this only when there is one view in the main body */
-    .fixed-card:last-of-type {
+    /* should do this when only one card per row, if there are two cars, they will mis-align */
+   /*  .fixed-card:last-of-type {
         margin-bottom: 0;
-    }
+    } */
 }
 
 .fixed-card strong{
