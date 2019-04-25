@@ -46,10 +46,18 @@
     line-height: 138px; /* depend: this is to make text vertically centered, need adjust if parent's height changed */
 }
 
+/* depend: min-width = #-of-cards-one-line-on-big-screen * card-width */
 @media(min-width: 960px) {
-    .fixed-card {
+    /* .fixed-card {
         margin-bottom: 0;
-    } 
+    }  */
+}
+
+@media(max-width: 960px) {
+    /* fixme: need this only when there is one view in the main body */
+    .fixed-card:last-of-type {
+        margin-bottom: 0;
+    }
 }
 
 .fixed-card strong{
