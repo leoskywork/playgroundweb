@@ -1,4 +1,4 @@
-# web playground
+# web frontend playground
 
 * A playground for ~~COOL~~ _bare bone_ web UI implements
 
